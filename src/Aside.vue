@@ -10,40 +10,41 @@
       <!-- new connection dialog -->
       <el-dialog :title="$t('message.new_connection')" :visible.sync="dialogFormVisible">
         <el-form :label-position="labelPosition" label-width="80px">
-          <el-form-item label="Host">
+          <el-form-item :label="$t('message.new_connection_url')">
             <el-input v-model="newConnection.host" autocomplete="off" placeholder="127.0.0.1"></el-input>
           </el-form-item>
 
-          <el-form-item label="Port">
+          <el-form-item :label="$t('message.new_connection_port')">
             <el-input v-model="newConnection.port" autocomplete="off" placeholder="6379"></el-input>
           </el-form-item>
 
-          <el-form-item label="Auth">
-            <el-input v-model="newConnection.auth" autocomplete="off"></el-input>
+          <el-form-item :label="$t('message.new_connection_auth')" >
+            <el-input v-model="newConnection.auth" type="password" autocomplete="off"></el-input>
           </el-form-item>
 
-          <el-form-item label="Name">
+          <el-form-item :label="$t('message.new_connection_name')">
             <el-input v-model="newConnection.name" autocomplete="off"></el-input>
           </el-form-item>
 
           <el-form-item label="">
-            <el-checkbox v-model="sshOptionsShow">SSH Tunnel</el-checkbox>
+            <el-checkbox v-model="sshOptionsShow" :label="$t('message.new_connection_ssh')"></el-checkbox>
           </el-form-item>
 
           <el-form v-if="sshOptionsShow" v-show="sshOptionsShow" label-width="80px">
-            <el-form-item label="Host">
-              <el-input v-model="newConnection.sshOptions.host" autocomplete="off"></el-input>
+            <el-form-item :label="$t('message.new_connection_url')">
+              <el-input v-model="newConnection.sshOptions.host" autocomplete="off" 
+                              placeholder="127.0.0.1"></el-input>
             </el-form-item>
 
-            <el-form-item label="Port">
+            <el-form-item :label="$t('message.new_connection_port')">
               <el-input v-model="newConnection.sshOptions.port" autocomplete="off"></el-input>
             </el-form-item>
 
-            <el-form-item label="Username">
+            <el-form-item :label="$t('message.new_connection_username')">
               <el-input v-model="newConnection.sshOptions.username" autocomplete="off"></el-input>
             </el-form-item>
 
-            <el-form-item label="Password">
+            <el-form-item :label="$t('message.new_connection_auth')">
               <el-input v-model="newConnection.sshOptions.password" autocomplete="off"></el-input>
             </el-form-item>
           </el-form>

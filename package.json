@@ -1,8 +1,8 @@
 {
-  "name": "another-redis-desktop-manager",
+  "name": "my-redis-desktop-manager",
   "version": "1.1.1",
   "description": "A faster, better and more stable redis desktop manager, compatible with Linux, windows, mac",
-  "author": "qii404",
+  "author": "qii404,smile-yan",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

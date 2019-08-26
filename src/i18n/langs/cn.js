@@ -1,6 +1,12 @@
 const cn = {
   message: {
     new_connection: '新建连接',
+    new_connection_url: '主机名',
+    new_connection_port: '端口号',
+    new_connection_auth: '密码',
+    new_connection_name: '连接名',
+    new_connection_ssh: 'SSH 通道',
+    new_connection_username: '用户名',
     refresh_connection: '刷新',
     edit_connection: '编辑连接',
     del_connection: '删除连接',

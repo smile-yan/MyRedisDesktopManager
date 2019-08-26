@@ -1,7 +1,13 @@
 const tw = {
   message: {
     new_connection: '新增連線',
+    new_connection_url: '主機名',
+    new_connection_port: '端口號',
+    new_connection_auth: '密碼',
     refresh_connection: '重新整理',
+    new_connection_name: '連接名',
+    new_connection_ssh: 'SSH 通道',
+    new_connection_username: '用戶名', 
     edit_connection: '編輯連線',
     del_connection: '刪除連線',
     add_new_line: '新增行',

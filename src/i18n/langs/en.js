@@ -1,6 +1,12 @@
 const en = {
   message: {
     new_connection: 'New Connection',
+    new_connection_url: 'Host',
+    new_connection_port: 'Port',
+    new_connection_auth: 'Password',
+    new_connection_name: 'Name',
+    new_connection_ssh: 'SSH Tunnel',
+    new_connection_username: 'Username',
     refresh_connection: 'Refresh',
     edit_connection: 'Edit Connection',
     del_connection: 'Delete Connection',
