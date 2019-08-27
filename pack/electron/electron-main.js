@@ -17,7 +17,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1100,
     height: 728,
-    icon: `${__dirname}/icons/icon.png`,
+    icon: `${__dirname}/icons/myredis.ico`,
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true,
@@ -34,6 +34,7 @@ function createWindow() {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
+
 
   // Emitted when the window is closed.
   mainWindow.on('closed', () => {

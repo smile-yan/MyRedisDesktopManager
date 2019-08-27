@@ -4,13 +4,13 @@ const { autoUpdater } = require("electron-updater");
 let mainEvent;
 
 const update = () => {
-  bindMainListener();
+  // bindMainListener();
 
-  ipcMain.on('update-check', (event, arg) => {
-    console.log('update-check begining..............');
-    mainEvent = event;
-    autoUpdater.checkForUpdates(event);
-  });
+  // ipcMain.on('update-check', (event, arg) => {
+  //   console.log('update-check begining..............');
+  //   mainEvent = event;
+  //   autoUpdater.checkForUpdates(event);
+  // });
 };
 
 function bindMainListener() {

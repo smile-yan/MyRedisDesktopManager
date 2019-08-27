@@ -45,7 +45,7 @@
             </el-form-item>
 
             <el-form-item :label="$t('message.new_connection_auth')">
-              <el-input v-model="newConnection.sshOptions.password" autocomplete="off"></el-input>
+              <el-input v-model="newConnection.sshOptions.password" type="password" autocomplete="off"></el-input>
             </el-form-item>
           </el-form>
 

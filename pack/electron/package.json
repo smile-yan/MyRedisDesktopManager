@@ -2,7 +2,7 @@
   "name": "my-redis-desktop-manager",
   "version": "1.2.5",
   "description": "A faster, better and more stable redis desktop manager.",
-  "author": "qii404.me",
+  "author": "smile-yan",
   "private": true,
   "main": "electron-main.js",
   "dependencies": {
@@ -11,15 +11,15 @@
   },
   "publish": [{
     "provider": "github",
-    "owner": "qishibo",
-    "repo": "AnotherRedisDesktopManager"
+    "owner": "smile-yan",
+    "repo": "MyRedisDesktopManager"
   }],
-  "repository": "github:qishibo/AnotherRedisDesktopManager",
+  "repository": "github:smile-yan/MyRedisDesktopManager",
   "build": {
-    "appId": "me.qii404.another-redis-desktop-manager",
-    "productName": "Another.Redis.Desktop.Manager",
+    "appId": "cn.smile-yan.my-redis-desktop-manager",
+    "productName": "MyRedisDesktopManager",
     "artifactName": "${productName}.${version}.${ext}",
-    "copyright": "Copyright © 2019 qii404.me",
+    "copyright": "Copyright © 2019 myredis.cn",
     "asar": true,
     "directories": {
       "output": "build-apps",
@@ -30,11 +30,12 @@
       "!static/js/*.map",
       "!static/css/*.map"
     ],
-    "win": {
-      "icon": "icons/icon.png",
+    "win": {  
+      "icon": "icons/myredis.ico",
       "target": [
         "nsis"
       ]
+
     },
     "nsis": {
       "allowToChangeInstallationDirectory": true,
@@ -50,7 +51,7 @@
       ]
     },
     "mac": {
-      "icon": "icons/icon.png",
+      "icon": "icons/myredis.ico",
       "type": "development",
       "category": "public.app-category.developer-tools",
       "target": [

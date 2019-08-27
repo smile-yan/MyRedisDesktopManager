@@ -3,7 +3,6 @@
 # Another Redis DeskTop Manager
 
 <hr/>
-
 > 🚀🚀🚀 A faster, better and more stable redis desktop manager, compatible with Linux, windows, mac. What's more, it won't crash when loading a large number of keys.
 
 [![MIT](https://img.shields.io/badge/license-MIT-000000.svg)](LICENSE)
@@ -112,6 +111,18 @@ npm start
 npm run electron
 ```
 
+## Package 
+
+```bash
+# prepare for package
+# 先删除dist
+npm run pack:prepare
+# pack .exe file
+npm run pack:win
+```
+
+
+
 ## License
 
 [MIT](LICENSE)
@@ -121,3 +132,6 @@ npm run electron
 
 [qii404.me](https://qii404.me/)  [@shiboooo](https://weibo.com/shiboooo?is_hot=1)
 
+```
+node_modules\.bin\electron-builder -h
+```
